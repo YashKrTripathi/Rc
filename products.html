@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Products – R.K. Tech Laser</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<div id="hdr"></div>
+<div class="ptitle"><div class="wrap"><h1>Our Products</h1><small>Home › Products</small></div></div>
+<section><div class="wrap grid g3" id="plist"></div></section>
+<div id="ftr"></div><script src="assets/site.js"></script>
+<script>document.getElementById("plist").innerHTML=PRODUCTS.map(p=>`<div class="card"><div class="ph">${p.name}</div><div class="b"><h3>${p.name}</h3><p>${p.short}</p><a class="more" href="product.html?id=${p.id}">Read More →</a></div></div>`).join("")</script></body></html>
