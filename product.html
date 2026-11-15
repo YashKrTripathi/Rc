@@ -8,6 +8,6 @@
 <section class="alt"><div class="wrap"><div class="sec-title"><h2>Other Products</h2></div><div class="grid g3" id="others"></div></div></section>
 <div id="ftr"></div><script src="assets/site.js"></script>
 <script>const id=new URLSearchParams(location.search).get("id");const p=PRODUCTS.find(x=>x.id===id)||PRODUCTS[0];
-document.title=p.name+" – R.K. Tech Laser";t.textContent=b.textContent=img.textContent=p.name;body.textContent=p.body;
+document.title=p.name+" – R.K. Tech Laser";t.textContent=b.textContent=img.innerHTML=`<img src="images/products/${p.id}.jpg" alt="${p.name}">`;body.textContent=p.body;
 pts.innerHTML=p.pts.map(x=>`<li>${x}</li>`).join("");q.href="https://wa.me/91"+BIZ.phone+"?text="+encodeURIComponent("Hello, I want a quote for: "+p.name);q.target="_blank";
-others.innerHTML=PRODUCTS.filter(x=>x!==p).slice(0,3).map(x=>`<div class="card"><div class="b"><h3>${x.name}</h3><p>${x.short}</p><a class="more" href="product.html?id=${x.id}">Read More →</a></div></div>`).join("")</script></body></html>
+others.innerHTML=PRODUCTS.filter(x=>x!==p).slice(0,3).map(x=>`<div class="card"><div class="ph"><img src="images/products/${x.id}.jpg" alt="${x.name}"></div><div class="b"><h3>${x.name}</h3><p>${x.short}</p><a class="more" href="product.html?id=${x.id}">Read More →</a></div></div>`).join("")</script></body></html>

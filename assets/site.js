@@ -37,9 +37,9 @@ document.getElementById("ftr").innerHTML=`
 <div class="copy">© 2026 R.K. Tech Laser. All rights reserved.</div></footer>
 <a class="wa" href="https://wa.me/91${BIZ.phone}" target="_blank" title="WhatsApp">WA</a>`;
 // hero slider
-const sl=document.querySelectorAll(".slide");if(sl.length){let i=0;const d=document.getElementById("dots");
+const bg=document.querySelectorAll(".hbg");const sl=document.querySelectorAll(".slide");if(sl.length){let i=0;const d=document.getElementById("dots");
 sl.forEach((_,k)=>{const b=document.createElement("b");b.onclick=()=>go(k);d.append(b)});
-function go(k){i=k;sl.forEach((s,j)=>s.classList.toggle("on",j==k));[...d.children].forEach((b,j)=>b.classList.toggle("on",j==k))}
+function go(k){i=k;bg.forEach((s,j)=>s.classList.toggle("on",j==k));sl.forEach((s,j)=>s.classList.toggle("on",j==k));[...d.children].forEach((b,j)=>b.classList.toggle("on",j==k))}
 go(0);setInterval(()=>go((i+1)%sl.length),5000)}
 // contact form -> WhatsApp
 const f=document.getElementById("enq");if(f)f.onsubmit=e=>{e.preventDefault();const v=Object.fromEntries(new FormData(f));

@@ -103,3 +103,10 @@ nav ul{flex-direction:column;align-items:stretch}
 nav .dd{display:flex;position:static;box-shadow:none;border:0;padding-left:16px}
 }
 @media(max-width:560px){.g3,.g4,.g2,.badges{grid-template-columns:1fr}}
+
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph:has(img):after{display:none}
+.hero .hbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}
+.hero .hbg.on{display:block}
+.hero:has(.hbg):before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,#0b0c1ccc 25%,#0b0c1c55 75%);z-index:1}
+.hero .wrap{position:relative;z-index:2}

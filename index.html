@@ -3,12 +3,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css"></head><body>
 <div id="hdr"></div>
-<div class="hero"><div class="wrap">
+<div class="hero"><img class="hbg" src="images/hero/hero-1.jpg" alt=""><img class="hbg" src="images/hero/hero-2.jpg" alt=""><div class="wrap">
 <div class="slide"><h1>Next Generation of Laser</h1><p>High performance machines built for quality. Laser, plasma, press brake and welding solutions for your workshop.</p><a class="btn" href="contact.html">Enquire Now</a></div>
 <div class="slide"><h1>Superior Quality &amp; Result</h1><p>Machines and service you can depend on, backed by support from our Roorkee team.</p><a class="btn" href="contact.html">Enquire Now</a></div>
 <div class="dots" id="dots"></div></div></div>
 <div class="badges"><div><h3>Trusted Service</h3><small>Installation &amp; after-sales support</small></div><div><h3>Leading Machinery</h3><small>Laser, plasma &amp; bending solutions</small></div><div><h3>High Technology</h3><small>Modern, efficient machines</small></div></div>
-<section><div class="wrap split"><div class="ph">Workshop photo</div><div><h2 style="color:var(--brand);font-size:2rem;margin-bottom:12px">About R.K. Tech Laser</h2>
+<section><div class="wrap split"><div class="ph"><img src="images/pages/home-workshop.jpg" alt="Workshop"></div><div><h2 style="color:var(--brand);font-size:2rem;margin-bottom:12px">About R.K. Tech Laser</h2>
 <p>R.K. Tech Laser supplies and services industrial machinery and equipment from Bhagwanpur, Roorkee. We deal in fiber laser cutting machines, CNC plasma cutters, shearing and press brake machines, welding machines, and plasma and laser consumables.</p><p style="margin:12px 0 20px">We help fabricators choose the right machine for their work and budget, and keep it running with prompt service.</p><a class="btn" href="about.html">Know More</a></div></div></section>
 <section class="alt"><div class="wrap"><div class="sec-title"><h2>Our Products</h2><p>Machines and consumables for sheet metal and fabrication shops.</p></div><div class="grid g3" id="plist"></div></div></section>
 <section class="who"><div class="wrap"><div class="sec-title"><h2>Who We Are</h2></div><div class="grid g3">
@@ -25,5 +25,5 @@
 <section class="cta"><div class="wrap"><h2>Need a machine or service?</h2><p>Call us on <b>9012739246</b> or send an enquiry.</p><a class="btn acc" href="contact.html">Get In Touch</a></div></section>
 <div id="ftr"></div>
 <script src="assets/site.js"></script>
-<script>document.getElementById("plist").innerHTML=PRODUCTS.map((p,i)=>`<div class="card"><div class="ph">${p.name}</div><div class="b"><h3>${p.name}</h3><p>${p.short}</p><a class="more" href="product.html?id=${p.id}">Read More →</a></div></div>`).join("")</script>
+<script>document.getElementById("plist").innerHTML=PRODUCTS.map((p,i)=>`<div class="card"><div class="ph"><img src="images/products/${p.id}.jpg" alt="${p.name}"></div><div class="b"><h3>${p.name}</h3><p>${p.short}</p><a class="more" href="product.html?id=${p.id}">Read More →</a></div></div>`).join("")</script>
 </body></html>
